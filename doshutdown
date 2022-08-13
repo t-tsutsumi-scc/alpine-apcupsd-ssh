@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -n "$SPACE_SEPARATED_SSH_DESTINATIONS" ]; then
+  for dest in $SPACE_SEPARATED_SSH_DESTINATIONS
+  do
+    ssh -t $dest sudo poweroff
+  done
+fi
