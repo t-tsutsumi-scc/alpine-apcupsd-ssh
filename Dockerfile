@@ -1,4 +1,4 @@
-FROM alpine:3.17.3
+FROM alpine:3.18.0
 
 RUN apk upgrade --no-cache && apk add --no-cache apcupsd openssh-client
 COPY apcupsd.conf doshutdown /etc/apcupsd/
